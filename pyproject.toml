@@ -1,0 +1,37 @@
+[project]
+name = "Santola_quiz"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "flet==0.25.2"
+]
+
+
+[tool.flet]
+# org name in reverse domain name notation, e.g. "com.mycompany".
+# Combined with project.name to build bundle ID for iOS and Android apps
+org = "com.ed7"
+
+# project display name that is used as an app title on Android and iOS home screens,
+# shown in window titles and about app dialogs on desktop.
+product = "Santola_quiz"
+
+# company name to display in about app dialogs
+company = "ed7_game_dev"
+
+# copyright text to display in about app dialogs
+copyright = "Copyright (C) 2024 by Flet"
+
+[tool.flet.app]
+path = "src"
+
+[tool.briefcase]
+project_name = "Santola_quiz"
+bundle = "com.ed7_game_dev.santolaquiz"
+version = "1.0.0"
+
+[tool.briefcase.app.meuapp]
+formal_name = "Santola_quiz"
+icon = "icon.ico"
